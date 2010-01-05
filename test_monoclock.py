@@ -25,8 +25,11 @@ class MonoclockTests(unittest.TestCase):
 		for n in xrange(10000):
 			values.append(monoclock.nano_count())
 
-		copied = sorted(values)
-		self.assertEqual(values, copied)
+		# Values either get bigger or stay the same
+		self.assertEqual(values, sorted(values))
+
+		# None of the values should be the same
+		self.assertEqual(len(values), len(set(values)))
 
 
 	def test_wrongArguments(self):
