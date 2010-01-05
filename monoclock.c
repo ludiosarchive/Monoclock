@@ -3,6 +3,13 @@
 
 /*
 http://code-factor.blogspot.com/2009/11/monotonic-timers.html
+
+TODO:
+	Verify that this works properly on 32-bit Python.
+	Windows support.
+		sub-TODO: support buggy AMD chips.
+	Mac OS X support.
+	Verify that it works on Solaris.
 */
 
 static PyObject *
