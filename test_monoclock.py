@@ -9,6 +9,7 @@ class MonoclockTests(unittest.TestCase):
 
 	def test_nano_count_isCorrectType(self):
 		val1 = monoclock.nano_count()
+		# In reality it is really always a long, I think.
 		self.assert_(isinstance(val1, (int, long)))
 
 
