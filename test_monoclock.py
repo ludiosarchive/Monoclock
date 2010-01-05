@@ -3,6 +3,8 @@ import unittest
 import monoclock
 import time
 
+# TODO: somehow test the SystemError("clock_gettime failed") branch
+
 class MonoclockTests(unittest.TestCase):
 
 	def test_nano_count_isCorrectType(self):

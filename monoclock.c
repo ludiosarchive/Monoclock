@@ -16,8 +16,11 @@ nano_count(PyObject *self, PyObject *args) {
 	}
 
 	ret = clock_gettime(CLOCK_MONOTONIC, &t);
-	if(ret != 0)
-		fatal_error("clock_gettime failed", 0);
+	if(ret != 0) {
+		PyErr_SetString(PyExc_SystemError,
+			"clock_gettime failed");
+		return NULL;
+	}
 	nanoseconds = (PY_LONG_LONG)t.tv_sec * 1000000000 + t.tv_nsec;
 	return PyLong_FromUnsignedLongLong(nanoseconds);
 }
