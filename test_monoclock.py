@@ -1,3 +1,10 @@
+"""
+Tests for monoclock.
+
+If the tests don't work for you, try running:
+	trial test_monoclock.py
+"""
+
 import unittest
 
 import monoclock
