@@ -5,11 +5,16 @@
 http://code-factor.blogspot.com/2009/11/monotonic-timers.html
 
 TODO:
-	Verify that this works properly on 32-bit Python.
-	Windows support.
-		sub-TODO: support buggy AMD chips.
-	Mac OS X support.
-	Verify that it works on Solaris.
+-	Verify that this works properly on 32-bit Python.
+-	Windows support.
+	-	sub-TODO: support buggy AMD chips, or expose a probablyBuggy()
+		function that returns True if the monotonic clock is
+		unreliable.
+	-	Note: Chromium's base/time_win.cc just disables use of the
+		monotonic clock on Athlon X2 CPUs with
+		`if (cpu.vendor_name() == "AuthenticAMD" && cpu.family() == 15`
+-	Mac OS X support.
+-	Verify that it works on Solaris.
 */
 
 static PyObject *
