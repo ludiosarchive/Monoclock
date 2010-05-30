@@ -2,10 +2,9 @@
 #include <time.h>
 
 /*
-http://code-factor.blogspot.com/2009/11/monotonic-timers.html
+See http://code-factor.blogspot.com/2009/11/monotonic-timers.html
 
 TODO:
--	Verify that this works properly on 32-bit Python.
 -	Windows support.
 	-	sub-TODO: support buggy AMD chips, or expose a probablyBuggy()
 		function that returns True if the monotonic clock is
