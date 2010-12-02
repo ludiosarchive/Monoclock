@@ -1,13 +1,18 @@
+Overview
+========
+
 Monoclock is a Python module that provides access to the
 monotonic clock on POSIX-like OSes that have `librt`.
 
-Install
-=======
-python setup.py install
+Compatibility: tested on CPython 2.6.5, CPython 2.7, pypy 1.3,
+and pypy 1.4.
 
-Run the tests
-=============
-python run_tests.py
+To install:
+$ python setup.py install
+
+To run the tests:
+$ python run_tests.py
+
 
 Usage
 =====
