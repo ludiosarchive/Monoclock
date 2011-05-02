@@ -7,7 +7,16 @@ setup(
 	name='Monoclock',
 	version='10.1.4',
 	description="Monotonic clock access for Python",
-	ext_modules = [
+	url="https://github.com/ludios/Monoclock",
+	author="Ivan Kozik",
+	author_email="ivan@ludios.org",
+	classifiers=[
+		'Development Status :: 5 - Production/Stable',
+		'Operating System :: POSIX :: Linux',
+		'Intended Audience :: Developers',
+		'License :: OSI Approved :: MIT License',
+	],
+	ext_modules=[
 		Extension("monoclock", ["monoclock.c"], libraries=['rt']),
 	],
 )
