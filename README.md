@@ -12,6 +12,7 @@ Install: `python setup.py install`
 Run the tests: `python run_tests.py`
 
 
+
 Usage
 =====
 
@@ -24,6 +25,7 @@ print t
 If you want seconds, divide `t` by `1e9`.
 
 
+
 Misc
 ====
 
@@ -34,6 +36,7 @@ If you're having trouble with monotonic clocks, see:
 *	Factor's source code.
 
 *	Chromium's source code.
+
 
 
 Wishlist
@@ -53,3 +56,12 @@ Wishlist
 	Note: Chromium's `base/time_win.cc` just disables use of the
 	monotonic clock on Athlon X2 CPUs with
 	`if (cpu.vendor_name() == "AuthenticAMD" && cpu.family() == 15`
+
+
+
+Contributing
+============
+
+Patches and pull requests are welcome.
+
+This coding standard applies: http://ludios.org/coding-standard/
