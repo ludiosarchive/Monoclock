@@ -5,7 +5,7 @@ from distutils.extension import Extension
 
 setup(
 	name='Monoclock',
-	version='10.1.4',
+	version='11.5.3',
 	description="Monotonic clock access for Python",
 	url="https://github.com/ludios/Monoclock",
 	author="Ivan Kozik",
