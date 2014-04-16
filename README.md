@@ -41,8 +41,6 @@ If you're having trouble with monotonic clocks, see:
 
 Wishlist
 ========
-*	OS X support (no librt, but mostly the same, I think)
-
 *	Windows support.
 
 *	Solaris support (does it work?).
