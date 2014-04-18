@@ -11,7 +11,7 @@ else:
 
 setup(
 	name='Monoclock',
-	version='14.4.16',
+	version='14.4.18',
 	description="Monotonic clock access for Python",
 	url="https://github.com/ludios/Monoclock",
 	author="Ivan Kozik",
