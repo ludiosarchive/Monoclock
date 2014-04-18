@@ -19,7 +19,7 @@ setup(
 	classifiers=[
 		'Development Status :: 5 - Production/Stable',
 		'Operating System :: POSIX :: Linux',
-		'Operating System :: MacOS :: MacOS X'
+		'Operating System :: MacOS :: MacOS X',
 		'Intended Audience :: Developers',
 		'License :: OSI Approved :: MIT License',
 	],
