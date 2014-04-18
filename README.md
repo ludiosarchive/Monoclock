@@ -1,5 +1,5 @@
-Overview
-========
+Monoclock
+=========
 
 Monoclock is a fast Python module that provides access to the
 monotonic clock on Linux and OS X.
