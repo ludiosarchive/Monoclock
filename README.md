@@ -9,10 +9,9 @@ and pypy 1.4.
 
 
 
-Usage
-=====
+## Usage
 
-```
+```python
 import monoclock
 t = monoclock.nano_count()
 print t
@@ -22,8 +21,7 @@ If you want seconds, divide `t` by `1e9`.
 
 
 
-Installation
-============
+## Installation
 
 Make sure you have a C compiler and Python headers installed.  On Ubuntu,
 that can be done with
@@ -58,8 +56,7 @@ Optionally, run the tests with `python run_tests.py`
 
 
 
-Misc
-====
+## Misc
 
 If you're having trouble with monotonic clocks, see:
 
@@ -71,8 +68,7 @@ If you're having trouble with monotonic clocks, see:
 
 
 
-Wishlist
-========
+## Wishlist
 
 *	Windows support.
 
@@ -87,12 +83,3 @@ Wishlist
 	Note: Chromium's `base/time_win.cc` just disables use of the
 	monotonic clock on Athlon X2 CPUs with
 	`if (cpu.vendor_name() == "AuthenticAMD" && cpu.family() == 15`
-
-
-
-Contributing
-============
-
-Patches and pull requests are welcome.
-
-This coding standard applies: http://ludios.org/coding-standard/
